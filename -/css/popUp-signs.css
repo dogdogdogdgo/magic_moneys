@@ -1,0 +1,146 @@
+:root{
+    --size: 10rem;
+    --background-blir-z-index: 10;
+    --pop-up-z-index: 11;
+}
+
+#single-player-menue{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 300ms;
+    background-color: var(--neon-green);
+    z-index: var(--pop-up-z-index);
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#single-player-menue.invisible{
+    display: none;
+}
+
+.information-text{
+    font-size: 1.7rem;
+}
+
+.button{
+    box-shadow: 10px 10px 5px 1px;
+    transition: 300ms;
+}
+
+#white{
+    color: var(--dark-pieces);
+    background: var(--light-pieces);
+}
+
+#black{
+    color: var(--light-pieces);
+    background: var(--dark-pieces);
+}
+
+#white:hover, #black:hover{
+    box-shadow: 0px 0px;
+}
+
+#or-text{
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+
+#decide-pawn-uppgrade{
+    z-index: var(--pop-up-z-index);
+    position: absolute;
+    background-color: var(--neon-green);
+    border-radius: 5px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.25vw;
+    height: 5vw;
+}
+
+#decide-pawn-uppgrade.invisible{
+    display: none;
+}
+
+#decide-pawn-uppgrade > div{
+    margin:  0 0.5rem 0 0.5rem;
+    font-size: 1.5vw;
+}
+
+#decide-pawn-uppgrade > svg{
+    transition: width 300ms;
+    width: 5vw;
+}
+#decide-pawn-uppgrade > svg:hover{
+    width: 6vw;
+}
+
+#background-blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: var(--background-blir-z-index);
+    background-color: var(--background-color);
+    opacity: 0.6;
+}
+#background-blur.invisible{
+    display: none;
+}
+
+#welcome-pop-up{
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--white);
+
+    text-align: center;
+    overflow-x: hidden;
+    overFlow-y: auto;
+}
+
+#welcome-pop-up.invisible{
+    display: none;
+}
+
+#welcome-wrapper{
+    max-width: 70%;
+    width: 50rem;
+    margin: 0 auto 0 auto;
+} 
+
+.pop-up-with-button{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: var(--pop-up-z-index);
+    background-color: var(--textlog-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0 5rem 1rem 5rem;
+    border-radius: 5px;
+}
+
+#game-over-pop-up.invisible{
+    display: none;
+}
+
+#select-gamemode.invisible{
+    display: none;
+}
+
+#swap-button.invisible{
+    display: none;
+}
