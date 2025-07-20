@@ -1,0 +1,40 @@
+:root{
+    --light-pieces: #EAE0D5;
+    --dark-pieces: #35393C;
+}
+
+
+.piece-container{
+    position: absolute;
+}
+
+.symbol{
+    position: absolute;
+    color: var(--neon-green);
+    font-family: 'Syncopate', sans-serif;
+    user-select: none;
+    font-weight: bold;
+}
+
+.toggle-transition{
+    transition: 300ms;
+}
+
+.piece{
+    stroke-width:0.7px;
+    
+}
+
+.light{
+    fill: var(--light-pieces);
+    stroke: var(--dark-pieces);
+}
+
+.dark{
+    fill: var(--dark-pieces);
+    stroke: var(--dark-pieces);
+}
+
+.highlight{
+    fill: var(--neon-green);
+}
